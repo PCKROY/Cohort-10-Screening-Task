@@ -1,1 +1,7 @@
-This repo. will contain Cohort 10 Screening Task 1 
+Cohort Task 1.1 files contains 'Naive Simulation using Matrix Multiplication' task. 
+In this file, I have defined a quantum circuit that consists of X, H, CNOT and Identity gates.
+What I did was I supposed if we have 3 qubits and CNOT is applied on the first 2, then an Identity gate is applied on the 
+last qubit. Then I did a tensor between the CNOT and Identity matrix gates which gave me a matrix that can be applied to the state.
+First I initialized the state with 'initialize_state' functuion. Then I applied the gates sequentially with 'apply_single_qubit_gate'
+and 'apply_cnot' functions and simulated the ciruit. Then with 'measure_runtime' function, I ploted the runtime of the number of qubits.
+In this way, I only ploted 14 qubits in this file.
