@@ -12,3 +12,12 @@ But in here, I built quantum tensor state and then I applied the gates X, H, CNO
 by doing tensor multiplication (np.tensordot). Then I ploted the runtime of the number of qubits by measure_runtime().
 In this way, I can simulate only upto 4 qubits. 
 
+Comparing the results from subtask 1 (statevector representation) and subtask 2 (tensor representation), we can observe several important points:
+1. The statevector representation (subtask 1) is significantly faster than the tensor representation (subtask 2) for the same number of qubits.
+2. The statevector representation scales better with increasing number of qubits. Subtask 1 could simulate up to 14 qubits in about 10 seconds 
+where Subtask 2 only managed 4 qubits in the same timeframe.
+3. Both methods show exponential growth in runtime as the number of qubits increases, but the growth is much steeper for the tensor representation.
+4. The tensor representation becomes impractical very quickly, with just 4 qubits taking over 2 seconds. The statevector representation remains usable for a larger number of qubits, up to 14 in the test.
+5. Although not directly measured, but quickly we know that Subtask 2 method becomes slower, means it is very much memory intensive than Subtask 1.
+
+
